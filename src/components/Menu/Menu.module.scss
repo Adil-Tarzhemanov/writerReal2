@@ -1,0 +1,105 @@
+.menu {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 60px;
+    left: 0;
+    transform: translate(-130%);
+    transition: 0.4s;
+    z-index: 50;
+
+    & .blur {
+        width: 100vw;
+        height: 100vh;
+        left: 30%;
+        backdrop-filter: blur(2px);
+        position: absolute;
+    }
+
+    & .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 75px;
+        width: 30%;
+        height: 100%;
+        // background: #1D1D21;
+        background: url('../../../public/img/burgerMenuBack2.png') fixed no-repeat;
+        background-size: cover;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 70px;
+            list-style-type: none;
+            padding: 0;
+            padding-left: 60px;
+
+            a {
+                text-decoration: none;
+            }
+
+            li {
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+                font-size: 24px;
+                color: white;
+
+                &:hover {
+                    cursor: pointer;
+                    background: linear-gradient(90.07deg, #7237BD 7.48%, #03BDFA 91.33%);
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+        button {
+            width: 261px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: white;
+            background: none;
+            cursor: pointer;
+
+            &:hover {
+                background: white;
+                color: #191C26;
+            }
+        }
+    }
+}
+
+.active {
+    transform: translate(0);
+}
+
+@media (max-width: 949px) {
+    .menu {
+        & .content {
+            width: 50%;
+        }
+    }
+
+    .active {
+        & .blur {
+            left: 50%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .menu {
+        & .content {
+            width: 100%;
+        }
+        
+        & .blur {
+            backdrop-filter: none;
+        }
+    }
+}
+

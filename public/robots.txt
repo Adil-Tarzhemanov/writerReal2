@@ -1,0 +1,7 @@
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Disallow: /photos
+Sitemap: http://abdullamadiev.uz

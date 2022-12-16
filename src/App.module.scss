@@ -1,0 +1,13 @@
+.container {
+    width: 100%;
+    background: url('../public/img/backAll.png');
+    background-size: cover;
+    overflow: hidden;
+
+    @media (max-width: 900px) {
+        background: url('../public/img/backMobile2.png');
+        background-size: cover;
+    }
+}
+
+//center center fixed

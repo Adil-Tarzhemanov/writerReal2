@@ -1,0 +1,40 @@
+.h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto 55px;
+    max-width: 100%;
+    font-weight: 500;
+    font-size: 64px;
+    color: #FFFFFF;
+
+    @media (max-width: 1200px) {
+        font-size: 48px;
+    }
+
+    @media (max-width: 900px) {
+        font-size: 36px;
+    }
+
+    @media (max-width: 690px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 460px) {
+        font-size: 16px;
+    }
+}
+
+.anime {
+    animation: anime 1.5s;
+}
+
+@keyframes anime {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+

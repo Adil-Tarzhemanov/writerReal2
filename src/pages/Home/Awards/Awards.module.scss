@@ -1,0 +1,63 @@
+.container {
+    max-width: 1220px;
+    min-height: 920px;
+    margin: 0 auto;
+    position: relative;
+
+    p {
+        max-width: 1200px;
+        margin-top: 55px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+    }
+
+    & .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        & .swiperSlide {
+            background-position: center;
+            background-size: cover;
+            max-width: 606px;
+            max-height: 500px;
+
+            img {
+                display: block;
+                width: 100%;
+                max-width: 606px;
+                height: auto;
+            }
+        }
+    }
+
+    h3 {
+        position: absolute;
+        right: 20px;
+        color: rgba(220, 66, 66, 1);
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        padding-bottom: 42px;
+        font-family: 'Inter';
+        font-style: italic;
+
+        span {
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+
+    @media (max-width: 550px) {
+        min-height: 830px;
+    }
+
+    @media (max-width: 450px) {
+        min-height: 765px;
+    }
+}
