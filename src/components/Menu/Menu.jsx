@@ -3,7 +3,7 @@ import { useWindowSize } from '../hooks/useWindowSize';
 import styles from './Menu.module.scss';
 import { Link as Links } from 'react-router-dom';
 
-export const Menu = ({ items, menuActive, setMenuActive, photos }) => {
+export const Menu = ({ items, menuActive, setMenuActive, photos, itemsLat, photosLat, activeUzb, activeLat }) => {
     const size = useWindowSize();
 
     return (
@@ -17,7 +17,20 @@ export const Menu = ({ items, menuActive, setMenuActive, photos }) => {
                 onClick={(e) => e.stopPropagation()}
             >
                 <ul>
-                    {items.map((item) => (
+                    {activeLat ? items.map((item) => (
+                        <Link
+                            to={item.to}
+                            smooth={true}
+                            offset={-100}
+                            duration={500}
+                        >
+                            <Links to="/">
+                                <li onClick={() => setMenuActive(false)}>
+                                    {item.value}
+                                </li>
+                            </Links>
+                        </Link>
+                    )) : itemsLat.map((item) => (
                         <Link
                             to={item.to}
                             smooth={true}
@@ -31,7 +44,7 @@ export const Menu = ({ items, menuActive, setMenuActive, photos }) => {
                             </Links>
                         </Link>
                     ))}
-                    <Link
+                    {activeLat ? <Link
                         to={photos.to}
                         smooth={true}
                         offset={-100}
@@ -42,7 +55,19 @@ export const Menu = ({ items, menuActive, setMenuActive, photos }) => {
                                 {photos.value}
                             </li>
                         </Links>
+                    </Link> : <Link
+                        to={photos.to}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                    >
+                        <Links to="/photos">
+                            <li onClick={() => setMenuActive(false)}>
+                                {photosLat.value}
+                            </li>
+                        </Links>
                     </Link>
+                    }
                 </ul>
             </div>
         </div>

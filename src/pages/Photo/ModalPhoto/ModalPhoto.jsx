@@ -12,7 +12,7 @@ export const ModalPhoto = ({ activeModal, setActiveModal, img }) => {
                 }`}
                 onClick={(e) => e.stopPropagation()}
             >
-                <img src={img} />
+                <img src={img} alt='abdullaPhoto' />
             </div>
         </div>
     );

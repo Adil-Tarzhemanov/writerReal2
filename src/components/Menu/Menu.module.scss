@@ -1,7 +1,7 @@
 .menu {
     position: fixed;
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     top: 60px;
     left: 0;
     transform: translate(-130%);
@@ -24,7 +24,8 @@
         width: 30%;
         height: 100%;
         // background: #1D1D21;
-        background: url('../../../public/img/burgerMenuBack2.png') fixed no-repeat;
+        background: url('../../../public/img/burgerMenuBack2.png') no-repeat;
+        -webkit-background-size: cover;
         background-size: cover;
 
         ul {
@@ -46,13 +47,6 @@
                 font-weight: 700;
                 font-size: 24px;
                 color: white;
-
-                &:hover {
-                    cursor: pointer;
-                    background: linear-gradient(90.07deg, #7237BD 7.48%, #03BDFA 91.33%);
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
             }
         }
 

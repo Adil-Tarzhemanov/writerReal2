@@ -1,0 +1,30 @@
+.container {
+    max-width: 1250px;
+    max-height: 483px;
+    margin: 0 auto;
+
+    & .mySwiper {
+        width: 100%;
+        height: 290px;
+        padding-left: 20px;
+      
+        & .swiperSlide {
+            min-width: 173px;
+            font-size: 18px;
+            
+            // Center slide text vertically 
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    }
+}

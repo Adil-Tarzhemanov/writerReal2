@@ -3,6 +3,7 @@
     nav {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         height: 60px;
         width: 100%;
         background: #1D1D21;
@@ -42,6 +43,45 @@
                 width: 30px;
                 background: white;
                 height: 3px;
+            }
+        }
+
+        & .languages {
+            display: flex;
+            gap: 12px;
+            margin-right: 20px;
+    
+            & .btn {
+                padding: 0;
+                border: none;
+                font: inherit;
+                color: inherit;
+                background-color: transparent;
+                cursor: pointer;
+            }
+    
+            & .slash {
+                height: 36px;
+                width: 1px;
+                background: white;
+            }
+    
+            & .uzbButton {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+            }
+        
+            & .latButton {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: #FFFFFF;
+            }
+    
+            & .active {
+                color: #777777;
             }
         }
     }

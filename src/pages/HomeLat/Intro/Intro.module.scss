@@ -1,0 +1,186 @@
+.container {
+    max-width: 100%;
+    min-height: 720px;
+    margin: 0 auto; 
+    background: #1D1D21 url('../../../../public/img/backgroundHome.png') center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    & .abdullaWrapper {
+        display: flex;
+        position: relative;
+        min-height: 720px;
+        max-width: 1519px;
+        margin: 0 auto;
+
+        & .nameAndWork {
+            padding-left: 84px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 659px;
+
+            h1 {
+                font-weight: 500;
+                font-size: 96px;
+                color: #FFFFFF;
+                line-height: 116px;
+            }
+
+            p {
+                font-family: 'Miama Nueva';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 30px;
+                color: #DC4242;
+            }
+        }
+
+        & .nameWorkAnime {
+            animation: nameWorkAnime 1.2s;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            max-width: 789px;
+            height: auto;
+            margin-top: 12px;
+            bottom: 0;
+            right: 0;
+        }
+
+        & .imgAnime {
+            animation: imgAnime 1.2s;
+        }
+    }
+
+    @keyframes nameWorkAnime {
+        0%{
+            transform: translateX(-50%);
+        }
+        100%{
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes imgAnime {
+        0%{
+            transform: translateY(50%);
+        }
+        100%{
+            transform: translateY(0%);
+        }
+    }
+
+
+
+    // @media (min-width: 1550px) {
+    //     min-height: 100vh;
+    // }
+
+    @media (max-width: 1375px) {
+        min-height: 659px;
+
+        & .abdullaWrapper {
+            position: relative;
+            min-height: 659px;
+
+            & .nameAndWork {
+                position: absolute;
+                left: 0;
+
+                h1 {
+                    left: 0;
+                    font-size: 80px;
+                }
+            }
+
+            img {
+                max-width: 700px;
+                bottom: 0;
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        & .abdullaWrapper {
+            & .nameAndWork {
+                h1 {
+                    font-size: 70px;
+                }
+            }
+
+            img {
+                max-width: 600px;
+                bottom: 0;
+            }
+        }
+    }
+
+    @media (max-width: 1050px) {
+        & .abdullaWrapper {
+            & .nameAndWork {
+                h1 {
+                    font-size: 60px;
+                    line-height: 70px;
+                }
+            }
+
+            img {
+                max-width: 500px;
+            }
+        }
+    }
+
+    @media (max-width: 880px) {
+        & .abdullaWrapper {
+            & .nameAndWork {
+                h1 {
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+            }
+
+            img {
+                max-width: 450px;
+                bottom: 0;
+            }
+        }
+    }
+
+    @media (max-width: 800px) {
+        & .abdullaWrapper {
+            & .nameAndWork {
+                align-items: flex-start;
+                justify-content: flex-start;
+                margin-top: 100px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    @media (max-width: 450px) {
+
+        & .abdullaWrapper {
+            & .nameAndWork {
+                margin-top: 150px;
+                gap: 25px;
+                h1 {
+                    font-size: 32px;
+                    line-height: 39px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            img {
+                width: 350px;
+            }
+        }
+    }
+
+}

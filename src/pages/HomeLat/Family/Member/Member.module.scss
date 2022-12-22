@@ -1,0 +1,52 @@
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 193px;
+    min-height: 304px;
+
+    & .someone {
+        font-weight: 500;
+        font-size: 20px;
+        color: #FFFFFF;
+    }
+
+    img {
+        width: 138px;
+        height: 203px;
+    }
+
+    & .nameAndLife {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1px;
+
+        & .name {
+            color: #ffffff;
+            font-weight: 500;
+            font-size: 20px;
+            width: 203px;
+            text-align: center;
+        }
+
+        & .lifeDates {
+            color: rgba(220, 66, 66, 1);
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 420px) {
+        & .nameAndLife {
+
+            & .name {
+                max-width: 120px;
+                text-align: center;
+            }
+        }
+    }
+}

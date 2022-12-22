@@ -1,0 +1,22 @@
+
+.work {
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 260px;
+    transition: transform 0.25s;
+    
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    & .img {
+        width: auto;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        padding: 0;
+    }
+}
+
+
