@@ -1,38 +1,38 @@
 export const works = [
     {
         img: 'img/works/1.png',
-        href: '/documents/umrim.pdf',
+        href: '/documents/1.pdf',
     },
     {
         img: 'img/works/2.png',
-        href: '/documents/Зулматдан_зиё.pdf',
+        href: '/documents/2.pdf',
     },
     {
         img: 'img/works/3.png',
-        href: '/documents/етти_ота.pdf',
+        href: '/documents/3.pdf',
     },
     {
         img: 'img/works/4.png',
-        href: '/documents/Колаётган_йозлар.pdf',
+        href: '/documents/4.pdf',
     },
     {
         img: 'img/works/5.png',
-        href: '/documents/Хеч_ким_болам_демасин.pdf',
+        href: '/documents/5.pdf',
     },
     {
         img: 'img/works/6.png',
-        href: '/documents/Юсуф_Сарёмий.pdf',
+        href: '/documents/6.pdf',
     },
     {
         img: 'img/works/7.png',
-        href: '/documents/Бобом_фахрим_менинг.pdf',
+        href: '/documents/7.pdf',
     },
     {
         img: 'img/works/8.png',
-        href: '/documents/Ватан_ширин.pdf',
+        href: '/documents/8.pdf',
     },
     {
         img: 'img/works/9.png',
-        href: '/documents/Бундай_гузайл_ватан_яна_кайда_бор.pdf',
+        href: '/documents/9.pdf',
     },
 ];

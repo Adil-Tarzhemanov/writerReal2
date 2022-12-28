@@ -35,4 +35,7 @@ export const awards = [
     {
         img: 'img/Awards/12.png',
     },
+    {
+        img: 'img/Awards/13.png',
+    },
 ];
